@@ -25,7 +25,10 @@
 			"settings": {
 				"editor.fontSize": 15,
 				"terminal.integrated.fontSize": 13,
-				"editor.wordWrap": "on"
+				"editor.wordWrap": "on",
+
+				"editor.formatOnSave": true,
+      			"editor.defaultFormatter": "esbenp.prettier-vscode"
 			}
 			
 		}
