@@ -1,5 +1,5 @@
-# MyReactWorkspace_codespaces
-This repo is to practice React topics 
+# Learn_Reactjs
+This repo is to created to learn Reactjs
 
 ## bg-changer project (React with tailwind css)
 A simple project where the background color changes when color buttons are clicked. This project was created to better understand the `useState` hook in React.
