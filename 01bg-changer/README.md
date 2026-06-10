@@ -1,4 +1,6 @@
-# useState Hook 
+# bg-changer project (React with tailwind css)
+
+## useState Hook 
 > A state of a component is a variable that holds some information that may changes over the lifetime of the component. **Whenever the value of the state changes, the component re-renders itself with updated values.**
 ```javascript
  const [counter, setCounter] = useState(0);
