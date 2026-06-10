@@ -1,16 +1,27 @@
-# React + Vite
+# currencyConvertor Project 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## useId Hook 
+> `useId()` is a React Hook that generates a unique, stable ID for a component instance. It's commonly used to connect form elements such as labels and inputs for accessibility.
 
-Currently, two official plugins are available:
+Syntax: 
+```javascript
+import { useId } from "react";
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+function MyComponent() {
+  const id = useId();
 
-## React Compiler
+  return <input id={id} />;
+}
+```
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Why use `useId`? 
+`useId()` solves this by generating unique IDs automatically.
 
-## Expanding the ESLint configuration
+## Server-Side Rendering (SSR)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+#### A major advantage of `useId` is that it works correctly with server-side rendering. 
+
+Without `useId`, generating IDs with:
+```javascript
+Math.random()
+```
