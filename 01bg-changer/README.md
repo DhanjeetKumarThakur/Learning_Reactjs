@@ -1,16 +1,13 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# useState Hook 
+> A state of a component is a variable that holds some information that may changes over the lifetime of the component. **Whenever the value of the state changes, the component re-renders itself with updated values.**
+```javascript
+ const [counter, setCounter] = useState(0);
+ ```
+ - The `useState()` hook returns a array of size 2, at the first index a variable with default value and at second index a function to change the value of that variable.
+ - Let's understand this bit by bit again, 
+ ```javascript
+ const [counter, setCounter] = useState(5);
+ ```
+ here `counter` is a variable, `setCounter` is a function that will be used for changing the value of `counter` variable and in `useState(5)` the value 5 is the default value we set for the `counter` variable. 
+ 
+![Application screenshot](src/assets/reactjs.JPG)
