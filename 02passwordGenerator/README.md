@@ -29,3 +29,9 @@ const memoizedValue = useMemo(() => {
   return count * 2;
 }, [count]);
 ```
+
+## Quick rule
+Use `useCallback` when: 
+1. You need a stable function reference.
+2. The function is a dependency of another Hook (useEffect, useMemo, etc.).
+
