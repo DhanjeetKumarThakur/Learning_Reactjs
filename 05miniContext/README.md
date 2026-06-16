@@ -1,6 +1,6 @@
 ## Context API
 
-- This is my notes here i will be noting down the my understanding about the context.
+- My understanding about the context api.
 
 - To avoid/solve prop drilling issue we need a state management library like Context API, Redux or Redux ToolKit (RTK).
 
@@ -54,3 +54,9 @@ export default App;
 ```
 
 > Note: In the above code, any components under `UserContextProvider` will act as `children` (i.e as we define in the component defination). And any state variables which are holded by values attribute will be accessible by those children components.
+
+<hr>
+
+### When to use Context API ?
+
+> We use the Context API in React when some data (state, functions, theme, auth info, etc.) needs to be shared across multiple components without passing props manually through every intermediate component (prop drilling).
