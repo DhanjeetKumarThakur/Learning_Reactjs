@@ -169,6 +169,7 @@ Explanation:
 
 Remember: The `as` keyword is required to rename a named import, but it is not required to rename a default import.
 
+---
 
 ## bg-changer project (React with tailwind css)
 
